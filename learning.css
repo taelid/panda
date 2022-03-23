@@ -5,6 +5,13 @@ html {
     font-weight: 500;
     padding: 10px 0;
 }
+a {
+    color: #ffe100;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 .center {
     text-align: center;
 }
@@ -18,13 +25,12 @@ html {
     font-weight: 600;
 }
 .footer {
-    position: fixed;
     left: 0px;
     bottom: 0px;
     height: 30px;
     width: 100%;
-    color: #ffe100;
-    font-weight: 300;
+    color: #651fff;
+    font-weight: 800;
 }
 div + div {
     margin-top: 40px;
