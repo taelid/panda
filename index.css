@@ -2,8 +2,9 @@ html {
     background-color: #0e141b;
     color: #f2f5f7;
     font-family: "League Spartan", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     padding: 10px 0;
+    text-align: center;
 }
 a {
     color: #ffe100;
@@ -12,17 +13,28 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.center {
-    text-align: center;
+.topnav {
+    color: #ffe100;
+    text-decoration: none;
+    word-spacing: 20px;
+    font-weight: 800;
+    font-size: larger;
+}
+::-moz-selection {
+    /* Code for Firefox */
+    color: #9776df;
+    background: rgba(255, 255, 0, 0);
+}
+
+::selection {
+    color: #9776df;
+    background: rgba(255, 255, 0, 0);
 }
 .header {
     font-family: "League Spartan", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: larger;
     color: #ff0a78;
-}
-.main {
-    font-weight: 600;
 }
 .footer {
     left: 0px;
@@ -31,7 +43,23 @@ a:hover {
     width: 100%;
     color: #651fff;
     font-weight: 800;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 div + div {
     margin-top: 40px;
+}
+#thursty {
+    position: absolute;
+    width: 800px; /* <- not relevant for the animation */
+    animation: 8s linear infinite alternate slide;
+}
+@keyframes slide {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 800px); /* 200px - 20px */
+    }
 }
