@@ -1,0 +1,31 @@
+html {
+    background-color: #0e141b;
+    color: #f2f5f7;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.center {
+    text-align: center;
+}
+.header {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    color: #ff0a78;
+}
+.main {
+    font-weight: 600;
+}
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    color: #ffe100;
+    font-weight: 300;
+}
+div + div {
+    margin-top: 40px;
+}
