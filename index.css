@@ -65,7 +65,6 @@ div + div {
         left: calc(100% - 800px); /* 200px - 20px */
     }
 }
-
 .thanks {
     color: #ff0a78;
 }
