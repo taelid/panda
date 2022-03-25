@@ -46,13 +46,16 @@ a:hover {
     bottom: 0;
     width: 100%;
 }
+.hidden {
+    color: #0e141b;
+}
 div + div {
     margin-top: 40px;
 }
 #thursty {
     position: absolute;
     width: 800px; /* <- not relevant for the animation */
-    animation: 8s linear infinite alternate slide;
+    animation: 6s linear infinite alternate slide;
 }
 #thursty:hover {
     animation-play-state: paused;
@@ -68,4 +71,9 @@ div + div {
 
 .thanks {
     color: #ff0a78;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    transition: all 1s ease 0s;
 }
