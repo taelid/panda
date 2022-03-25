@@ -46,9 +46,6 @@ a:hover {
     bottom: 0;
     width: 100%;
 }
-.hidden {
-    color: #0e141b;
-}
 div + div {
     margin-top: 40px;
 }
