@@ -8,11 +8,16 @@ html {
   min-height: 100%;
   background-attachment: fixed;
   padding-top: 1rem;
+  text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%),
+    0 8px 16px rgb(13 0 77 / 8%);
 }
 a {
   color: #ffe100;
   text-decoration: none;
   font-weight: 800;
+}
+a:hover {
+  text-decoration: underline;
 }
 .topnav {
   background-color: #ffe100;
@@ -33,6 +38,19 @@ a {
 .topnav:active {
   transform: translate(-1%, 0.2rem);
   box-shadow: 0 0;
+}
+.clicky {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  background-color: #1c2935;
+  color: #0e141b;
+  font-size: small;
+}
+.tiny {
+  font-size: 0.5rem;
+  font-style: italic;
+  display: block;
 }
 ::-moz-selection {
   /* Code for Firefox */
@@ -63,15 +81,12 @@ a {
 div + div {
   margin-top: 40px;
 }
-.catlink {
+/* .catlink {
   background: -webkit-linear-gradient(left, #ff0a78 30%, #ffe100 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.catlink:hover {
-  text-decoration: underline;
-}
+} */
 #thursty {
   position: absolute;
   width: 800px; /* <- relevant for the animation */
