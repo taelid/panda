@@ -1,22 +1,38 @@
 html {
-  background-color: #0e141b;
+  /* background-color: #0e141b; */
   color: #f2f5f7;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   text-align: center;
-  overflow: hidden;
+  background: linear-gradient(to bottom right, #1c2935 30%, #0e141b 100%);
+  min-height: 100%;
+  background-attachment: fixed;
+  padding-top: 1rem;
 }
 a {
   color: #ffe100;
   text-decoration: none;
   font-weight: 800;
 }
-a:hover {
-  text-decoration: underline;
-}
 .topnav {
-  word-spacing: 20px;
-  font-size: larger;
+  background-color: #ffe100;
+  color: #0e141b;
+  padding: 0.2rem 0.5rem 0 0.5rem;
+  width: 5rem;
+  font-size: large;
+  font-weight: 800;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: -2px 5px #0e141b;
+  display: inline-block;
+}
+.topnav:hover {
+  background-color: #ff0a78;
+  text-decoration: none;
+}
+.topnav:active {
+  transform: translate(-1%, 0.2rem);
+  box-shadow: 0 0;
 }
 ::-moz-selection {
   /* Code for Firefox */
@@ -47,6 +63,15 @@ a:hover {
 div + div {
   margin-top: 40px;
 }
+.catlink {
+  background: -webkit-linear-gradient(left, #ff0a78 30%, #ffe100 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.catlink:hover {
+  text-decoration: underline;
+}
 #thursty {
   position: absolute;
   width: 800px; /* <- relevant for the animation */
@@ -67,7 +92,5 @@ div + div {
   color: #ff0a78;
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  transition: all 1s ease 0s;
+  display: none;
 }
