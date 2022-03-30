@@ -5,8 +5,9 @@ html {
   background: #0e141b;
   min-height: 100%;
   background-attachment: fixed;
+  /* Adds nice shadow blur effect
   text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%),
-    0 8px 16px rgb(13 0 77 / 8%);
+  0 8px 16px rgb(13 0 77 / 8%); */
   text-align: center;
 }
 a {
