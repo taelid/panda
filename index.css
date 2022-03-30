@@ -91,7 +91,13 @@ a:hover {
 .header {
   font-weight: 500;
   font-size: 1.5rem;
-  color: orangered;
+  color: rgba(255, 255, 255, 0.736);
+  margin-bottom: 2rem;
+}
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ff0a78;
   margin-bottom: 2rem;
 }
 body {
