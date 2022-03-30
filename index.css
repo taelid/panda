@@ -38,7 +38,8 @@ a:hover {
   border: 0;
   box-shadow: -2px 5px orangered;
   display: inline-block;
-  margin-bottom: 3rem;
+  /* check this if there is too much space below navbar */
+  margin-bottom: 2rem;
 }
 .topnav:hover {
   background-color: #ff0a78;
@@ -99,15 +100,14 @@ body {
   margin-bottom: 1rem;
 }
 .footer {
-  left: 0;
-  bottom: 0;
-  height: 30px;
+  margin: auto;
   width: 100%;
   color: #651fff;
   font-weight: 800;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  background-color: #0e141b;
 }
 .disappointment {
   background: -webkit-linear-gradient(left, #ff0a78 0, #00d9ff 100%);
