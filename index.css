@@ -27,6 +27,7 @@ a:hover {
   width: 30rem;
 }
 .topnav {
+  position: sticky;
   background-color: #ffe100;
   color: #0e141b;
   padding: 0.5rem 0.5rem 0 0.5rem;
@@ -115,6 +116,9 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
+}
+#cowcat {
+  width: 50rem;
 }
 #thursty {
   position: absolute;
