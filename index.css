@@ -59,7 +59,7 @@ a:hover {
   border-radius: 15px;
   border: 0;
   text-align: center;
-  box-shadow: -2px 5px #0e141b;
+  box-shadow: -2px 5px #1a1f24;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -87,7 +87,7 @@ a:hover {
 }
 .header {
   font-weight: 500;
-  font-size: larger;
+  font-size: 1.5rem;
   color: orangered;
   margin-bottom: 2rem;
 }
@@ -133,6 +133,7 @@ body {
 }
 .thanks {
   color: orangered;
+  font-size: 1.1rem;
 }
 ::-webkit-scrollbar {
   display: none;
