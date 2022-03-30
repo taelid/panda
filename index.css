@@ -86,10 +86,9 @@ a:hover {
   background: rgba(255, 255, 255, 0);
 }
 .header {
-  font-family: "League Spartan", sans-serif;
   font-weight: 500;
   font-size: larger;
-  color: #ff0a78;
+  color: orangered;
   margin-bottom: 2rem;
 }
 body {
@@ -133,7 +132,7 @@ body {
   }
 }
 .thanks {
-  color: #ff0a78;
+  color: orangered;
 }
 ::-webkit-scrollbar {
   display: none;
