@@ -124,9 +124,11 @@ body {
   transform: translate(-50%, -50%);
   width: 20%;
   height: 5%;
-  font-size: larger;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
   background-color: #0e141b;
-  padding: 10rem;
+  padding: 5rem;
+  padding-bottom: 7rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
