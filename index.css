@@ -105,7 +105,7 @@ h1 {
   font-family: "Fanwood Text", serif;
   font-style: italic;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.5vmax;
   color: rgba(255, 255, 255, 0.736);
   margin-bottom: 2rem;
   line-height: 4rem;
