@@ -27,7 +27,6 @@ a:hover {
   width: 30rem;
 }
 .topnav {
-  position: sticky;
   background-color: #ffe100;
   color: #0e141b;
   padding: 0.5rem 0.5rem 0 0.5rem;
@@ -99,9 +98,6 @@ h1 {
   font-size: 2rem;
   color: #ff0a78;
   margin-bottom: 2rem;
-}
-body {
-  height: 100%;
 }
 .main {
   margin-bottom: 1rem;
