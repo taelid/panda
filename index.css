@@ -36,7 +36,7 @@ a:hover {
   font-weight: 800;
   border-radius: 15px;
   border: 0;
-  box-shadow: -2px 5px #ff4500;
+  box-shadow: -0.1vmax 0.25vmax #ff4500;
   display: inline-block;
   /* check this if there is too much space below navbar */
   margin-bottom: 3rem;
@@ -128,7 +128,9 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Fanwood Text", serif;
   font-style: italic;
+  font-weight: 600;
 }
 #cowcat {
   width: 50rem;
@@ -196,4 +198,78 @@ h1 {
 }
 .hidden {
   display: none;
+}
+/* ---------------------------------------------------------- */
+[data-tooltip] {
+  position: relative;
+  z-index: 20;
+}
+
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  bottom: calc(100% + 5px); /* 5px is the size of the arrow */
+  pointer-events: none;
+  transition: 0.2s;
+  will-change: transform;
+}
+
+/* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  padding: 10px 1rem;
+  min-width: 50px;
+  max-width: 200px;
+  width: max-content;
+  width: -moz-max-content;
+  border-radius: 6px;
+  outline: #ff0a78 solid 1px;
+  font-family: "League Spartan", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1rem;
+  background-color: #1c2935;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+  white-space: pre-wrap;
+  transform: translate(-50%, -5px) scale(0.5);
+}
+
+/* Tooltip arrow */
+[data-tooltip]:after {
+  content: "";
+  border-style: solid;
+  border-width: 5px 5px 0px 5px; /* CSS triangle */
+  border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+  transition-duration: 0s; /* If the mouse leaves the element, 
+                              the transition effects for the 
+                              tooltip arrow are "turned off" */
+  transform-origin: top; /* Orientation setting for the
+                              slide-down effect */
+  transform: translateX(-50%) scaleY(0);
+}
+
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
+  transition-delay: 0.1s;
+  transform: translate(-50%, -5px) scale(1);
+}
+/* 
+  Arrow slide down effect only on mouseenter (NOT on mouseleave)
+*/
+[data-tooltip]:hover:after {
+  transition-delay: 0.2s; /* Starting after the grow effect */
+  transition-duration: 0.2s;
+  transform: translateX(-50%) scaleY(1);
 }
