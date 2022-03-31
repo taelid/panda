@@ -24,29 +24,30 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30rem;
+  width: 25vmax;
 }
 .topnav {
   background-color: #ffe100;
   color: #0e141b;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  width: 6rem;
-  height: 1.5rem;
-  font-size: larger;
+  width: 5vmax;
+  height: 1.5vmax;
+  font-size: 1.2vmax;
   font-weight: 800;
   border-radius: 15px;
   border: 0;
-  box-shadow: -2px 5px orangered;
+  box-shadow: -2px 5px #ff4500;
   display: inline-block;
   /* check this if there is too much space below navbar */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 0.3vmax;
 }
 .topnav:hover {
   background-color: #ff0a78;
   text-decoration: none;
 }
 .topnav:active {
-  transform: translate(-1%, 0.2rem);
+  transform: translate(-2%, 0.3vmax);
   box-shadow: 0 0;
 }
 .clicky {
@@ -89,9 +90,10 @@ a:hover {
 }
 .header {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.5vmax;
   color: rgba(255, 255, 255, 0.736);
   margin-bottom: 2rem;
+  line-height: 2vmax;
 }
 h1 {
   font-weight: 600;
@@ -100,7 +102,13 @@ h1 {
   margin-bottom: 2rem;
 }
 .main {
-  margin-bottom: 1rem;
+  font-family: "Fanwood Text", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.736);
+  margin-bottom: 2rem;
+  line-height: 4rem;
 }
 .footer {
   margin: auto;
@@ -111,6 +119,9 @@ h1 {
   bottom: 0;
   left: 0;
   background-color: #0e141b;
+  font-size: 1.1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 .disappointment {
   background: -webkit-linear-gradient(left, #ff0a78 0, #00d9ff 100%);
@@ -121,6 +132,7 @@ h1 {
 }
 #cowcat {
   width: 50rem;
+  border-radius: 15px;
 }
 #thursty {
   position: absolute;
@@ -140,7 +152,7 @@ h1 {
 }
 .thanks {
   color: orangered;
-  font-size: 1.1rem;
+  font-size: 0.8vmax;
 }
 ::-webkit-scrollbar {
   display: none;
