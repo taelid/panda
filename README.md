@@ -1,10 +1,5 @@
 # pandaproject
 
-<<<<<<< HEAD
-Personal website to learn HTML/CSS/Javascript on. Training wheels on.
-=======
-Training wheels on.
->>>>>>> 03afe2f0efba89c98b32a4eee7cfd576cc38f4d3
-Latest updates found at: https://pandaproject.netlify.app/
+Personal website to learn HTML/CSS/Javascript on. Training wheels on. Latest updates found at: https://pandaproject.netlify.app/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5565b62d-5a6e-4cc4-94ce-fd6539f3b23d/deploy-status)](https://app.netlify.com/sites/pandaproject/deploys)
