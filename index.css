@@ -41,7 +41,7 @@ a:hover {
   box-shadow: -0.1vmax 0.25vmax #ff4500;
   display: inline-block;
   /* check this if there is too much space below navbar */
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-left: 0.3vmax;
 }
 .topnav:hover {
